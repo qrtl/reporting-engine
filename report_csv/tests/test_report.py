@@ -3,6 +3,7 @@
 import logging
 from io import StringIO
 
+from odoo.exceptions import UserError
 from odoo.tests import common
 
 _logger = logging.getLogger(__name__)

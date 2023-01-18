@@ -19,7 +19,7 @@ class ReportAction(models.Model):
         if report_model is None:
             raise UserError(_("%s model was not found" % report_model_name))
         return report_model.with_context(
-            {"active_model": self.model}
+            {"active_model": self.model, "encoding": self.encoding}
         ).create_csv_report(docids, data)
 
     @api.model

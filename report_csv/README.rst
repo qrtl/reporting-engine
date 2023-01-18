@@ -74,6 +74,8 @@ A report XML record ::
         attachment_use="False"
     />
 
+Update encoding with an appropriate value (e.g. cp932) as necessary.
+
 Bug Tracker
 ===========
 
@@ -98,6 +100,9 @@ Contributors
 * Enric Tobella <etobella@creublanca.es>
 * Jaime Arroyo <jaime.arroyo@creublanca.es>
 * Rattapong Chokmasermkul <rattapongc@ecosoft.co.th>
+* `Quartile <https://www.quartile.co>`__:
+
+  * Aung Ko Ko Lin
 
 Maintainers
 ~~~~~~~~~~~
