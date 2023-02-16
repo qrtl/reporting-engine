@@ -8,7 +8,11 @@
             <xpath expr="//field[@name='report_type']" position="after">
                 <field
                     name="encoding"
-                    attr="{'invisible': [('report_type', '!=', 'csv')]}"
+                    attrs="{'invisible': [('report_type', '!=', 'csv')]}"
+                />
+                <field
+                    name="encode_error_handling"
+                    attrs="{'invisible': [('encoding', '=', False)]}"
                 />
             </xpath>
         </field>
