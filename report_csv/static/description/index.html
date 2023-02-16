@@ -385,14 +385,17 @@ ul.auto-toc {
 </div>
 <div class="section" id="configuration">
 <h1><a class="toc-backref" href="#id1">Configuration</a></h1>
-<p>In order to add encode error handing in csv report you need to choose
-encode error handling in reports.</p>
+<p>In case the exported CSV report should be encoded in another system than UTF-8, following
+fields of the report record (<em>Settings &gt; Technical &gt; Reports</em>) should be populated accordingly.</p>
 <ul class="simple">
-<li>Go to Settings &gt; Technical &gt; Reports &gt; Your csv report</li>
-<li>Add encoding first</li>
-<li>Choose encode error handling</li>
+<li>Encoding: set an encoding system (such as cp932)</li>
+<li>Encode Error Handling: select ‘Ignore’ or ‘Replace’ as necessary.<ul>
+<li>‘Ignore’: in case of an encoding error, the problematic character will be removed from the exported file.</li>
+<li>‘Replace’: in case of an encoding error, the problematic character will be replaced with ‘?’ symbol.</li>
+<li>Leaving the field blank: in case of an encoding error, the report generation fails with an error message.</li>
 </ul>
-<p>Note: You can’t see encode error handling if you don’t add encoding first.</p>
+</li>
+</ul>
 </div>
 <div class="section" id="usage">
 <h1><a class="toc-backref" href="#id2">Usage</a></h1>
